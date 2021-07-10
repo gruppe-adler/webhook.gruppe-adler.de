@@ -81,7 +81,7 @@ app.post('/github', async (req, res) => {
             }
 
             console.log('\nRequest Payload:');
-            console.log(request.text());
+            console.log(await request.text());
 
             console.log('\nResponse Headers:');
             for (const header of response.headers) {
